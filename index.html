@@ -1,0 +1,1346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bootstrap Typography Overrider</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<style type="text/css">
+		.highlight-0-576 {
+			background: orange;
+		}
+		@media only screen and (min-width: 576px) {
+			.highlight-0-576 {
+				background: white;
+			}
+			.highlight-576-768 {
+				background: orange;
+			}
+		}
+		@media only screen and (min-width: 768px) {
+			.highlight-576-768 {
+				background: white;
+			}
+			.highlight-768-992 {
+				background: orange;
+			}
+		}
+		@media only screen and (min-width: 992px) {
+			.highlight-768-992 {
+				background: white;
+			}
+			.highlight-992-1200 {
+				background: orange;
+			}
+		}
+		@media only screen and (min-width: 1200px) {
+			.highlight-992-1200 {
+				background: white;
+			}
+			.highlight-1200-infinity {
+				background: orange;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="app">
+		<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+		<div class="container">
+			<div class="row">
+				<v-style>
+					.display-1 {
+						font-size: {{fontSizeDisplay1[0] + 'px'}};
+						line-height: {{lineHeightDisplay1[0] + 'px'}};
+						font-family: {{fontFamilyDisplay1[0]}};
+						font-weight: {{fontWeightDisplay1[0]}};
+						color: {{fontColorDisplay1[0]}};
+					}
+
+					@media only screen and (min-width: 576px) {
+						.display-1 {
+							font-size: {{fontSizeDisplay1[1] + 'px'}};
+							line-height: {{lineHeightDisplay1[1] + 'px'}};
+							font-family: {{fontFamilyDisplay1[1]}};
+							font-weight: {{fontWeightDisplay1[1]}};
+							color: {{fontColorDisplay1[1]}};
+						}
+					}
+
+					@media only screen and (min-width: 768px) {
+						.display-1 {
+							font-size: {{fontSizeDisplay1[2] + 'px'}};
+							line-height: {{lineHeightDisplay1[2] + 'px'}};
+							font-family: {{fontFamilyDisplay1[2]}};
+							font-weight: {{fontWeightDisplay1[2]}};
+							color: {{fontColorDisplay1[2]}};
+						}
+					}
+
+					@media only screen and (min-width: 992px) {
+						.display-1 {
+							font-size: {{fontSizeDisplay1[3] + 'px'}};
+							line-height: {{lineHeightDisplay1[3] + 'px'}};
+							font-family: {{fontFamilyDisplay1[3]}};
+							font-weight: {{fontWeightDisplay1[3]}};
+							color: {{fontColorDisplay1[3]}};
+						}
+					}
+
+					@media only screen and (min-width: 1200px) {
+						.display-1 {
+							font-size: {{fontSizeDisplay1[4] + 'px'}};
+							line-height: {{lineHeightDisplay1[4] + 'px'}};
+							font-family: {{fontFamilyDisplay1[4]}};
+							font-weight: {{fontWeightDisplay1[4]}};
+							color: {{fontColorDisplay1[4]}};
+						}
+					}
+
+
+
+
+
+
+					.display-2 {
+						font-size: {{fontSizeDisplay2[0] + 'px'}};
+						line-height: {{lineHeightDisplay2[0] + 'px'}};
+						font-family: {{fontFamilyDisplay2[0]}};
+						font-weight: {{fontWeightDisplay2[0]}};
+						color: {{fontColorDisplay2[0]}};
+					}
+
+					@media only screen and (min-width: 576px) {
+						.display-2 {
+							font-size: {{fontSizeDisplay2[1] + 'px'}};
+							line-height: {{lineHeightDisplay2[1] + 'px'}};
+							font-family: {{fontFamilyDisplay2[1]}};
+							font-weight: {{fontWeightDisplay2[1]}};
+							color: {{fontColorDisplay2[1]}};
+						}
+					}
+
+					@media only screen and (min-width: 768px) {
+						.display-2 {
+							font-size: {{fontSizeDisplay2[2] + 'px'}};
+							line-height: {{lineHeightDisplay2[2] + 'px'}};
+							font-family: {{fontFamilyDisplay2[2]}};
+							font-weight: {{fontWeightDisplay2[2]}};
+							color: {{fontColorDisplay2[2]}};
+						}
+					}
+
+					@media only screen and (min-width: 992px) {
+						.display-2 {
+							font-size: {{fontSizeDisplay2[3] + 'px'}};
+							line-height: {{lineHeightDisplay2[3] + 'px'}};
+							font-family: {{fontFamilyDisplay2[3]}};
+							font-weight: {{fontWeightDisplay2[3]}};
+							color: {{fontColorDisplay2[3]}};
+						}
+					}
+
+					@media only screen and (min-width: 1200px) {
+						.display-2 {
+							font-size: {{fontSizeDisplay2[4] + 'px'}};
+							line-height: {{lineHeightDisplay2[4] + 'px'}};
+							font-family: {{fontFamilyDisplay2[4]}};
+							font-weight: {{fontWeightDisplay2[4]}};
+							color: {{fontColorDisplay2[4]}};
+						}
+					}
+
+
+
+
+
+
+					.display-3 {
+						font-size: {{fontSizeDisplay3[0] + 'px'}};
+						line-height: {{lineHeightDisplay3[0] + 'px'}};
+						font-family: {{fontFamilyDisplay3[0]}};
+						font-weight: {{fontWeightDisplay3[0]}};
+						color: {{fontColorDisplay3[0]}};
+					}
+
+					@media only screen and (min-width: 576px) {
+						.display-3 {
+							font-size: {{fontSizeDisplay3[1] + 'px'}};
+							line-height: {{lineHeightDisplay3[1] + 'px'}};
+							font-family: {{fontFamilyDisplay3[1]}};
+							font-weight: {{fontWeightDisplay3[1]}};
+							color: {{fontColorDisplay3[1]}};
+						}
+					}
+
+					@media only screen and (min-width: 768px) {
+						.display-3 {
+							font-size: {{fontSizeDisplay3[2] + 'px'}};
+							line-height: {{lineHeightDisplay3[2] + 'px'}};
+							font-family: {{fontFamilyDisplay3[2]}};
+							font-weight: {{fontWeightDisplay3[2]}};
+							color: {{fontColorDisplay3[2]}};
+						}
+					}
+
+					@media only screen and (min-width: 992px) {
+						.display-3 {
+							font-size: {{fontSizeDisplay3[3] + 'px'}};
+							line-height: {{lineHeightDisplay3[3] + 'px'}};
+							font-family: {{fontFamilyDisplay3[3]}};
+							font-weight: {{fontWeightDisplay3[3]}};
+							color: {{fontColorDisplay3[3]}};
+						}
+					}
+
+					@media only screen and (min-width: 1200px) {
+						.display-3 {
+							font-size: {{fontSizeDisplay3[4] + 'px'}};
+							line-height: {{lineHeightDisplay3[4] + 'px'}};
+							font-family: {{fontFamilyDisplay3[4]}};
+							font-weight: {{fontWeightDisplay3[4]}};
+							color: {{fontColorDisplay3[4]}};
+						}
+					}
+
+
+
+
+					.display-4 {
+						font-size: {{fontSizeDisplay4[0] + 'px'}};
+						line-height: {{lineHeightDisplay4[0] + 'px'}};
+						font-family: {{fontFamilyDisplay4[0]}};
+						font-weight: {{fontWeightDisplay4[0]}};
+						color: {{fontColorDisplay4[0]}};
+					}
+
+					@media only screen and (min-width: 576px) {
+						.display-4 {
+							font-size: {{fontSizeDisplay4[1] + 'px'}};
+							line-height: {{lineHeightDisplay4[1] + 'px'}};
+							font-family: {{fontFamilyDisplay4[1]}};
+							font-weight: {{fontWeightDisplay4[1]}};
+							color: {{fontColorDisplay4[1]}};
+						}
+					}
+
+					@media only screen and (min-width: 768px) {
+						.display-4 {
+							font-size: {{fontSizeDisplay4[2] + 'px'}};
+							line-height: {{lineHeightDisplay4[2] + 'px'}};
+							font-family: {{fontFamilyDisplay4[2]}};
+							font-weight: {{fontWeightDisplay4[2]}};
+							color: {{fontColorDisplay4[2]}};
+						}
+					}
+
+					@media only screen and (min-width: 992px) {
+						.display-4 {
+							font-size: {{fontSizeDisplay4[3] + 'px'}};
+							line-height: {{lineHeightDisplay4[3] + 'px'}};
+							font-family: {{fontFamilyDisplay4[3]}};
+							font-weight: {{fontWeightDisplay4[3]}};
+							color: {{fontColorDisplay4[3]}};
+						}
+					}
+
+					@media only screen and (min-width: 1200px) {
+						.display-4 {
+							font-size: {{fontSizeDisplay4[4] + 'px'}};
+							line-height: {{lineHeightDisplay4[4] + 'px'}};
+							font-family: {{fontFamilyDisplay4[4]}};
+							font-weight: {{fontWeightDisplay4[4]}};
+							color: {{fontColorDisplay4[4]}};
+						}
+					}
+
+					h1,.h1 {
+						font-size: {{fontSizeH1[0] + 'px'}};
+						line-height: {{lineHeightH1[0] + 'px'}};
+						font-family: {{fontFamilyH1[0]}};
+						font-weight: {{fontWeightH1[0]}};
+						color: {{fontColorH1[0]}};
+					}
+
+					@media only screen and (min-width: 576px) {
+						h1,.h1 {
+							font-size: {{fontSizeH1[1] + 'px'}};
+							line-height: {{lineHeightH1[1] + 'px'}};
+							font-family: {{fontFamilyH1[1]}};
+							font-weight: {{fontWeightH1[1]}};
+							color: {{fontColorH1[1]}};
+						}
+					}
+
+					@media only screen and (min-width: 768px) {
+						h1,.h1 {
+							font-size: {{fontSizeH1[2] + 'px'}};
+							line-height: {{lineHeightH1[2] + 'px'}};
+							font-family: {{fontFamilyH1[2]}};
+							font-weight: {{fontWeightH1[2]}};
+							color: {{fontColorH1[2]}};
+						}
+					}
+
+					@media only screen and (min-width: 992px) {
+						h1,.h1 {
+							font-size: {{fontSizeH1[3] + 'px'}};
+							line-height: {{lineHeightH1[3] + 'px'}};
+							font-family: {{fontFamilyH1[3]}};
+							font-weight: {{fontWeightH1[3]}};
+							color: {{fontColorH1[3]}};
+						}
+					}
+
+					@media only screen and (min-width: 1200px) {
+						h1,.h1 {
+							font-size: {{fontSizeH1[4] + 'px'}};
+							line-height: {{lineHeightH1[4] + 'px'}};
+							font-family: {{fontFamilyH1[4]}};
+							font-weight: {{fontWeightH1[4]}};
+							color: {{fontColorH1[4]}};
+						}
+					}
+
+					h2,.h2 {
+						font-size: {{fontSizeH2[0] + 'px'}};
+						line-height: {{lineHeightH2[0] + 'px'}};
+						font-family: {{fontFamilyH2[0]}};
+						font-weight: {{fontWeightH2[0]}};
+						color: {{fontColorH2[0]}};
+					}
+
+					@media only screen and (min-width: 576px) {
+						h2,.h2 {
+							font-size: {{fontSizeH2[1] + 'px'}};
+							line-height: {{lineHeightH2[1] + 'px'}};
+							font-family: {{fontFamilyH2[1]}};
+							font-weight: {{fontWeightH2[1]}};
+							color: {{fontColorH2[1]}};
+						}
+					}
+
+					@media only screen and (min-width: 768px) {
+						h2,.h2 {
+							font-size: {{fontSizeH2[2] + 'px'}};
+							line-height: {{lineHeightH2[2] + 'px'}};
+							font-family: {{fontFamilyH2[2]}};
+							font-weight: {{fontWeightH2[2]}};
+							color: {{fontColorH2[2]}};
+						}
+					}
+
+					@media only screen and (min-width: 992px) {
+						h2,.h2 {
+							font-size: {{fontSizeH2[3] + 'px'}};
+							line-height: {{lineHeightH2[3] + 'px'}};
+							font-family: {{fontFamilyH2[3]}};
+							font-weight: {{fontWeightH2[3]}};
+							color: {{fontColorH2[3]}};
+						}
+					}
+
+					@media only screen and (min-width: 1200px) {
+						h2,.h2 {
+							font-size: {{fontSizeH2[4] + 'px'}};
+							line-height: {{lineHeightH2[4] + 'px'}};
+							font-family: {{fontFamilyH2[4]}};
+							font-weight: {{fontWeightH2[4]}};
+							color: {{fontColorH2[4]}};
+						}
+					}
+
+					h3,.h3 {
+						font-size: {{fontSizeH3[0] + 'px'}};
+						line-height: {{lineHeightH3[0] + 'px'}};
+						font-family: {{fontFamilyH3[0]}};
+						font-weight: {{fontWeightH3[0]}};
+						color: {{fontColorH3[0]}};
+					}
+
+					@media only screen and (min-width: 576px) {
+						h3,.h3 {
+							font-size: {{fontSizeH3[1] + 'px'}};
+							line-height: {{lineHeightH3[1] + 'px'}};
+							font-family: {{fontFamilyH3[1]}};
+							font-weight: {{fontWeightH3[1]}};
+							color: {{fontColorH3[1]}};
+						}
+					}
+
+					@media only screen and (min-width: 768px) {
+						h3,.h3 {
+							font-size: {{fontSizeH3[2] + 'px'}};
+							line-height: {{lineHeightH3[2] + 'px'}};
+							font-family: {{fontFamilyH3[2]}};
+							font-weight: {{fontWeightH3[2]}};
+							color: {{fontColorH3[2]}};
+						}
+					}
+
+					@media only screen and (min-width: 992px) {
+						h3,.h3 {
+							font-size: {{fontSizeH3[3] + 'px'}};
+							line-height: {{lineHeightH3[3] + 'px'}};
+							font-family: {{fontFamilyH3[3]}};
+							font-weight: {{fontWeightH3[3]}};
+							color: {{fontColorH3[3]}};
+						}
+					}
+
+					@media only screen and (min-width: 1200px) {
+						h3,.h3 {
+							font-size: {{fontSizeH3[4] + 'px'}};
+							line-height: {{lineHeightH3[4] + 'px'}};
+							font-family: {{fontFamilyH3[4]}};
+							font-weight: {{fontWeightH3[4]}};
+							color: {{fontColorH3[4]}};
+						}
+					}
+
+					h4,.h4 {
+						font-size: {{fontSizeH4[0] + 'px'}};
+						line-height: {{lineHeightH4[0] + 'px'}};
+						font-family: {{fontFamilyH4[0]}};
+						font-weight: {{fontWeightH4[0]}};
+						color: {{fontColorH4[0]}};
+					}
+
+					@media only screen and (min-width: 576px) {
+						h4,.h4 {
+							font-size: {{fontSizeH4[1] + 'px'}};
+							line-height: {{lineHeightH4[1] + 'px'}};
+							font-family: {{fontFamilyH4[1]}};
+							font-weight: {{fontWeightH4[1]}};
+							color: {{fontColorH4[1]}};
+						}
+					}
+
+					@media only screen and (min-width: 768px) {
+						h4,.h4 {
+							font-size: {{fontSizeH4[2] + 'px'}};
+							line-height: {{lineHeightH4[2] + 'px'}};
+							font-family: {{fontFamilyH4[2]}};
+							font-weight: {{fontWeightH4[2]}};
+							color: {{fontColorH4[2]}};
+						}
+					}
+
+					@media only screen and (min-width: 992px) {
+						h4,.h4 {
+							font-size: {{fontSizeH4[3] + 'px'}};
+							line-height: {{lineHeightH4[3] + 'px'}};
+							font-family: {{fontFamilyH4[3]}};
+							font-weight: {{fontWeightH4[3]}};
+							color: {{fontColorH4[3]}};
+						}
+					}
+
+					@media only screen and (min-width: 1200px) {
+						h4,.h4 {
+							font-size: {{fontSizeH4[4] + 'px'}};
+							line-height: {{lineHeightH4[4] + 'px'}};
+							font-family: {{fontFamilyH4[4]}};
+							font-weight: {{fontWeightH4[4]}};
+							color: {{fontColorH4[4]}};
+						}
+					}
+
+					h5,.h5 {
+						font-size: {{fontSizeH5[0] + 'px'}};
+						line-height: {{lineHeightH5[0] + 'px'}};
+						font-family: {{fontFamilyH5[0]}};
+						font-weight: {{fontWeightH5[0]}};
+						color: {{fontColorH5[0]}};
+					}
+
+					@media only screen and (min-width: 576px) {
+						h5,.h5 {
+							font-size: {{fontSizeH5[1] + 'px'}};
+							line-height: {{lineHeightH5[1] + 'px'}};
+							font-family: {{fontFamilyH5[1]}};
+							font-weight: {{fontWeightH5[1]}};
+							color: {{fontColorH5[1]}};
+						}
+					}
+
+					@media only screen and (min-width: 768px) {
+						h5,.h5 {
+							font-size: {{fontSizeH5[2] + 'px'}};
+							line-height: {{lineHeightH5[2] + 'px'}};
+							font-family: {{fontFamilyH5[2]}};
+							font-weight: {{fontWeightH5[2]}};
+							color: {{fontColorH5[2]}};
+						}
+					}
+
+					@media only screen and (min-width: 992px) {
+						h5,.h5 {
+							font-size: {{fontSizeH5[3] + 'px'}};
+							line-height: {{lineHeightH5[3] + 'px'}};
+							font-family: {{fontFamilyH5[3]}};
+							font-weight: {{fontWeightH5[3]}};
+							color: {{fontColorH5[3]}};
+						}
+					}
+
+					@media only screen and (min-width: 1200px) {
+						h5,.h5 {
+							font-size: {{fontSizeH5[4] + 'px'}};
+							line-height: {{lineHeightH5[4] + 'px'}};
+							font-family: {{fontFamilyH5[4]}};
+							font-weight: {{fontWeightH5[4]}};
+							color: {{fontColorH5[4]}};
+						}
+					}
+
+					h6,.h6 {
+						font-size: {{fontSizeH6[0] + 'px'}};
+						line-height: {{lineHeightH6[0] + 'px'}};
+						font-family: {{fontFamilyH6[0]}};
+						font-weight: {{fontWeightH6[0]}};
+						color: {{fontColorH6[0]}};
+					}
+
+					@media only screen and (min-width: 576px) {
+						h6,.h6 {
+							font-size: {{fontSizeH6[1] + 'px'}};
+							line-height: {{lineHeightH6[1] + 'px'}};
+							font-family: {{fontFamilyH6[1]}};
+							font-weight: {{fontWeightH6[1]}};
+							color: {{fontColorH6[1]}};
+						}
+					}
+
+					@media only screen and (min-width: 768px) {
+						h6,.h6 {
+							font-size: {{fontSizeH6[2] + 'px'}};
+							line-height: {{lineHeightH6[2] + 'px'}};
+							font-family: {{fontFamilyH6[2]}};
+							font-weight: {{fontWeightH6[2]}};
+							color: {{fontColorH6[2]}};
+						}
+					}
+
+					@media only screen and (min-width: 992px) {
+						h6,.h6 {
+							font-size: {{fontSizeH6[3] + 'px'}};
+							line-height: {{lineHeightH6[3] + 'px'}};
+							font-family: {{fontFamilyH6[3]}};
+							font-weight: {{fontWeightH6[3]}};
+							color: {{fontColorH6[3]}};
+						}
+					}
+
+					@media only screen and (min-width: 1200px) {
+						h6,.h6 {
+							font-size: {{fontSizeH6[4] + 'px'}};
+							line-height: {{lineHeightH6[4] + 'px'}};
+							font-family: {{fontFamilyH6[4]}};
+							font-weight: {{fontWeightH6[4]}};
+							color: {{fontColorH6[4]}};
+						}
+					}
+				</v-style>
+				<div class="col-12">
+					<p :class="htmlClass">
+						{{message}}
+					</p>
+					<p :class="htmlClass">
+						{{message}}
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 mb-3">
+					<select v-model="htmlClass" class="form-control">
+						<option v-for="htmlMyClass in htmlClasses">{{htmlMyClass}}</option>
+					</select>
+				</div>
+				<div class="col-12 mb-3">
+					<input type="text" class="form-control" placeholder="Google Font Name">
+				</div>
+				<div class="col-12">
+					<button class="btn btn-primary btn-block">Add Font</button>
+				</div>
+			</div>
+			<br/>
+			<div class="row">
+				<div class="col-12">
+					<table class="table">
+						<thead>
+							<tr>
+								<th scope="col">BreakPoint</th>
+								<th scope="col">Font Size</th>
+								<th scope="col">Line Height</th>
+								<th scope="col">Font Family</th>
+								<th scope="col">Font Weight</th>
+								<th scope="col">Font Color</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr v-if="htmlClass === 'display-1'" v-for="(resolution, index) in resolutions" :key="resolution">
+								<td :class="'highlight-' + resolution">
+									{{resolution}}
+								</td>
+								<td><input class="form-control" v-model="fontSizeDisplay1[index]"></td>
+								<td><input class="form-control" v-model="lineHeightDisplay1[index]"></td>
+								<td>
+									<select v-model="fontFamilyDisplay1[index]" class="form-control">
+										<option>Open Sans</option>
+										<option>Barlow</option>
+									</select>
+								</td>
+								<td>
+									<select v-model="fontWeightDisplay1[index]" class="form-control">
+										<option v-for="fontWeight in fontWeights">{{fontWeight}}</option>
+									</select>
+								</td>
+								<td><input class="form-control" v-model="fontColorDisplay1[index]"></td>
+							</tr>
+
+							<tr v-if="htmlClass === 'display-2'" v-for="(resolution, index) in resolutions" :key="resolution">
+								<td>
+									{{resolution}}
+								</td>
+								<td><input class="form-control" v-model="fontSizeDisplay2[index]"></td>
+								<td><input class="form-control" v-model="lineHeightDisplay2[index]"></td>
+								<td>
+									<select v-model="fontFamilyDisplay2[index]" class="form-control">
+										<option>Open Sans</option>
+										<option>Barlow</option>
+									</select>
+								</td>
+								<td>
+									<select v-model="fontWeightDisplay2[index]" class="form-control">
+										<option v-for="fontWeight in fontWeights">{{fontWeight}}</option>
+									</select>
+								</td>
+								<td><input class="form-control" v-model="fontColorDisplay2[index]"></td>
+							</tr>
+
+							<tr v-if="htmlClass === 'display-3'" v-for="(resolution, index) in resolutions" :key="resolution">
+								<td>
+									{{resolution}}
+								</td>
+								<td><input class="form-control" v-model="fontSizeDisplay3[index]"></td>
+								<td><input class="form-control" v-model="lineHeightDisplay3[index]"></td>
+								<td>
+									<select v-model="fontFamilyDisplay3[index]" class="form-control">
+										<option>Open Sans</option>
+										<option>Barlow</option>
+									</select>
+								</td>
+								<td>
+									<select v-model="fontWeightDisplay3[index]" class="form-control">
+										<option v-for="fontWeight in fontWeights">{{fontWeight}}</option>
+									</select>
+								</td>
+								<td><input class="form-control" v-model="fontColorDisplay3[index]"></td>
+							</tr>
+
+							<tr v-if="htmlClass === 'display-4'" v-for="(resolution, index) in resolutions" :key="resolution">
+								<td>
+									{{resolution}}
+								</td>
+								<td><input class="form-control" v-model="fontSizeDisplay4[index]"></td>
+								<td><input class="form-control" v-model="lineHeightDisplay4[index]"></td>
+								<td>
+									<select v-model="fontFamilyDisplay4[index]" class="form-control">
+										<option>Open Sans</option>
+										<option>Barlow</option>
+									</select>
+								</td>
+								<td>
+									<select v-model="fontWeightDisplay4[index]" class="form-control">
+										<option v-for="fontWeight in fontWeights">{{fontWeight}}</option>
+									</select>
+								</td>
+								<td><input class="form-control" v-model="fontColorDisplay4[index]"></td>
+							</tr>
+
+							<tr v-if="htmlClass === 'h1'" v-for="(resolution, index) in resolutions" :key="resolution">
+								<td>
+									{{resolution}}
+								</td>
+								<td><input class="form-control" v-model="fontSizeH1[index]"></td>
+								<td><input class="form-control" v-model="lineHeightH1[index]"></td>
+								<td>
+									<select v-model="fontFamilyH1[index]" class="form-control">
+										<option>Open Sans</option>
+										<option>Barlow</option>
+									</select>
+								</td>
+								<td>
+									<select v-model="fontWeightH1[index]" class="form-control">
+										<option v-for="fontWeight in fontWeights">{{fontWeight}}</option>
+									</select>
+								</td>
+								<td><input class="form-control" v-model="fontColorH1[index]"></td>
+							</tr>
+
+							<tr v-if="htmlClass === 'h2'" v-for="(resolution, index) in resolutions" :key="resolution">
+								<td>
+									{{resolution}}
+								</td>
+								<td><input class="form-control" v-model="fontSizeH2[index]"></td>
+								<td><input class="form-control" v-model="lineHeightH2[index]"></td>
+								<td>
+									<select v-model="fontFamilyH2[index]" class="form-control">
+										<option>Open Sans</option>
+										<option>Barlow</option>
+									</select>
+								</td>
+								<td>
+									<select v-model="fontWeightH2[index]" class="form-control">
+										<option v-for="fontWeight in fontWeights">{{fontWeight}}</option>
+									</select>
+								</td>
+								<td><input class="form-control" v-model="fontColorH2[index]"></td>
+							</tr>
+
+							<tr v-if="htmlClass === 'h3'" v-for="(resolution, index) in resolutions" :key="resolution">
+								<td>
+									{{resolution}}
+								</td>
+								<td><input class="form-control" v-model="fontSizeH3[index]"></td>
+								<td><input class="form-control" v-model="lineHeightH3[index]"></td>
+								<td>
+									<select v-model="fontFamilyH3[index]" class="form-control">
+										<option>Open Sans</option>
+										<option>Barlow</option>
+									</select>
+								</td>
+								<td>
+									<select v-model="fontWeightH3[index]" class="form-control">
+										<option v-for="fontWeight in fontWeights">{{fontWeight}}</option>
+									</select>
+								</td>
+								<td><input class="form-control" v-model="fontColorH3[index]"></td>
+							</tr>
+
+							<tr v-if="htmlClass === 'h4'" v-for="(resolution, index) in resolutions" :key="resolution">
+								<td>
+									{{resolution}}
+								</td>
+								<td><input class="form-control" v-model="fontSizeH4[index]"></td>
+								<td><input class="form-control" v-model="lineHeightH4[index]"></td>
+								<td>
+									<select v-model="fontFamilyH4[index]" class="form-control">
+										<option>Open Sans</option>
+										<option>Barlow</option>
+									</select>
+								</td>
+								<td>
+									<select v-model="fontWeightH4[index]" class="form-control">
+										<option v-for="fontWeight in fontWeights">{{fontWeight}}</option>
+									</select>
+								</td>
+								<td><input class="form-control" v-model="fontColorH4[index]"></td>
+							</tr>
+
+							<tr v-if="htmlClass === 'h5'" v-for="(resolution, index) in resolutions" :key="resolution">
+								<td>
+									{{resolution}}
+								</td>
+								<td><input class="form-control" v-model="fontSizeH5[index]"></td>
+								<td><input class="form-control" v-model="lineHeightH5[index]"></td>
+								<td>
+									<select v-model="fontFamilyH5[index]" class="form-control">
+										<option>Open Sans</option>
+										<option>Barlow</option>
+									</select>
+								</td>
+								<td>
+									<select v-model="fontWeightH5[index]" class="form-control">
+										<option v-for="fontWeight in fontWeights">{{fontWeight}}</option>
+									</select>
+								</td>
+								<td><input class="form-control" v-model="fontColorH5[index]"></td>
+							</tr>
+
+							<tr v-if="htmlClass === 'h6'" v-for="(resolution, index) in resolutions" :key="resolution">
+								<td>
+									{{resolution}}
+								</td>
+								<td><input class="form-control" v-model="fontSizeH6[index]"></td>
+								<td><input class="form-control" v-model="lineHeightH6[index]"></td>
+								<td>
+									<select v-model="fontFamilyH6[index]" class="form-control">
+										<option>Open Sans</option>
+										<option>Barlow</option>
+									</select>
+								</td>
+								<td>
+									<select v-model="fontWeightH6[index]" class="form-control">
+										<option v-for="fontWeight in fontWeights">{{fontWeight}}</option>
+									</select>
+								</td>
+								<td><input class="form-control" v-model="fontColorH6[index]"></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="row">
+				
+			</div>
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	<script type="text/javascript">
+		Vue.component('v-style', {
+			render: function (createElement) {
+				return createElement('style', this.$slots.default)
+			}
+		});
+
+		var app = new Vue({
+			el: '#app',
+			data: {
+				message: 'Almost before we knew it, we had left the ground.',
+				fontSizeDisplay1: {},
+				lineHeightDisplay1: {},
+				fontFamilyDisplay1: {},
+				fontWeightDisplay1: {},
+				fontColorDisplay1: {},
+
+				fontSizeDisplay2: {},
+				lineHeightDisplay2: {},
+				fontFamilyDisplay2: {},
+				fontWeightDisplay2: {},
+				fontColorDisplay2: {},
+
+				fontSizeDisplay3: {},
+				lineHeightDisplay3: {},
+				fontFamilyDisplay3: {},
+				fontWeightDisplay3: {},
+				fontColorDisplay3: {},
+
+				fontSizeDisplay4: {},
+				lineHeightDisplay4: {},
+				fontFamilyDisplay4: {},
+				fontWeightDisplay4: {},
+				fontColorDisplay4: {},
+
+				fontSizeH1: {},
+				lineHeightH1: {},
+				fontFamilyH1: {},
+				fontWeightH1: {},
+				fontColorH1: {},
+
+				fontSizeH2: {},
+				lineHeightH2: {},
+				fontFamilyH2: {},
+				fontWeightH2: {},
+				fontColorH2: {},
+
+				fontSizeH3: {},
+				lineHeightH3: {},
+				fontFamilyH3: {},
+				fontWeightH3: {},
+				fontColorH3: {},
+
+				fontSizeH4: {},
+				lineHeightH4: {},
+				fontFamilyH4: {},
+				fontWeightH4: {},
+				fontColorH4: {},
+
+				fontSizeH5: {},
+				lineHeightH5: {},
+				fontFamilyH5: {},
+				fontWeightH5: {},
+				fontColorH5: {},
+
+				fontSizeH6: {},
+				lineHeightH6: {},
+				fontFamilyH6: {},
+				fontWeightH6: {},
+				fontColorH6: {},
+
+				htmlClass: 'display-1',
+				htmlClasses: ['display-1','display-2','display-3','display-4','h1','h2','h3','h4','h5','h6'],
+				resolutions: ['0-576', '576-768', '768-992', '992-1200', '1200-infinity'],
+				fontWeights: [100, 200, 300, 400, 500, 600, 700, 800, 900]
+			},
+			mounted() {
+				var htmlMyClasses = ['display-1','display-2','display-3','display-4','h1','h2','h3','h4','h5','h6'];
+
+				if(!localStorage.htmlClass) {
+					localStorage.htmlClass = JSON.stringify('display-1');
+				}
+				this.htmlClass = JSON.parse(localStorage.htmlClass);
+
+
+
+				if(!localStorage.fontSizeDisplay1) {
+					localStorage.fontSizeDisplay1 = JSON.stringify(['16', '16', '16', '16', '16']);
+				}
+				this.fontSizeDisplay1 = JSON.parse(localStorage.fontSizeDisplay1);
+
+				if(!localStorage.lineHeightDisplay1) {
+					localStorage.lineHeightDisplay1 = JSON.stringify(['24', '24', '24', '24', '24']);
+				}
+				this.lineHeightDisplay1 = JSON.parse(localStorage.lineHeightDisplay1);
+
+				if(!localStorage.fontFamilyDisplay1) {
+					localStorage.fontFamilyDisplay1 = JSON.stringify(['Open Sans', 'Open Sans', 'Open Sans', 'Open Sans', 'Open Sans']);
+				}
+				this.fontFamilyDisplay1 = JSON.parse(localStorage.fontFamilyDisplay1);
+
+				if(!localStorage.fontWeightDisplay1) {
+					localStorage.fontWeightDisplay1 = JSON.stringify(['400', '400', '400', '400', '400']);
+				}
+				this.fontWeightDisplay1 = JSON.parse(localStorage.fontWeightDisplay1);
+
+				if(!localStorage.fontColorDisplay1) {
+					localStorage.fontColorDisplay1 = JSON.stringify(['#212529', '#212529', '#212529', '#212529', '#212529']);
+				}
+				this.fontColorDisplay1 = JSON.parse(localStorage.fontColorDisplay1);
+
+
+
+
+				if(!localStorage.fontSizeDisplay2) {
+					localStorage.fontSizeDisplay2 = JSON.stringify(['16', '16', '16', '16', '16']);
+				}
+				this.fontSizeDisplay2 = JSON.parse(localStorage.fontSizeDisplay2);
+
+				if(!localStorage.lineHeightDisplay2) {
+					localStorage.lineHeightDisplay2 = JSON.stringify(['24', '24', '24', '24', '24']);
+				}
+				this.lineHeightDisplay2 = JSON.parse(localStorage.lineHeightDisplay2);
+
+				if(!localStorage.fontFamilyDisplay2) {
+					localStorage.fontFamilyDisplay2 = JSON.stringify(['Open Sans', 'Open Sans', 'Open Sans', 'Open Sans', 'Open Sans']);
+				}
+				this.fontFamilyDisplay2 = JSON.parse(localStorage.fontFamilyDisplay2);
+
+				if(!localStorage.fontWeightDisplay2) {
+					localStorage.fontWeightDisplay2 = JSON.stringify(['400', '400', '400', '400', '400']);
+				}
+				this.fontWeightDisplay2 = JSON.parse(localStorage.fontWeightDisplay2);
+
+				if(!localStorage.fontColorDisplay2) {
+					localStorage.fontColorDisplay2 = JSON.stringify(['#212529', '#212529', '#212529', '#212529', '#212529']);
+				}
+				this.fontColorDisplay2 = JSON.parse(localStorage.fontColorDisplay2);
+
+
+
+
+				if(!localStorage.fontSizeDisplay3) {
+					localStorage.fontSizeDisplay3 = JSON.stringify(['16', '16', '16', '16', '16']);
+				}
+				this.fontSizeDisplay3 = JSON.parse(localStorage.fontSizeDisplay3);
+
+				if(!localStorage.lineHeightDisplay3) {
+					localStorage.lineHeightDisplay3 = JSON.stringify(['24', '24', '24', '24', '24']);
+				}
+				this.lineHeightDisplay3 = JSON.parse(localStorage.lineHeightDisplay3);
+
+				if(!localStorage.fontFamilyDisplay3) {
+					localStorage.fontFamilyDisplay3 = JSON.stringify(['Open Sans', 'Open Sans', 'Open Sans', 'Open Sans', 'Open Sans']);
+				}
+				this.fontFamilyDisplay3 = JSON.parse(localStorage.fontFamilyDisplay3);
+
+				if(!localStorage.fontWeightDisplay3) {
+					localStorage.fontWeightDisplay3 = JSON.stringify(['400', '400', '400', '400', '400']);
+				}
+				this.fontWeightDisplay3 = JSON.parse(localStorage.fontWeightDisplay3);
+
+				if(!localStorage.fontColorDisplay3) {
+					localStorage.fontColorDisplay3 = JSON.stringify(['#212529', '#212529', '#212529', '#212529', '#212529']);
+				}
+				this.fontColorDisplay3 = JSON.parse(localStorage.fontColorDisplay3);
+
+
+
+
+
+				if(!localStorage.fontSizeDisplay4) {
+					localStorage.fontSizeDisplay4 = JSON.stringify(['16', '16', '16', '16', '16']);
+				}
+				this.fontSizeDisplay4 = JSON.parse(localStorage.fontSizeDisplay4);
+
+				if(!localStorage.lineHeightDisplay4) {
+					localStorage.lineHeightDisplay4 = JSON.stringify(['24', '24', '24', '24', '24']);
+				}
+				this.lineHeightDisplay4 = JSON.parse(localStorage.lineHeightDisplay4);
+
+				if(!localStorage.fontFamilyDisplay4) {
+					localStorage.fontFamilyDisplay4 = JSON.stringify(['Open Sans', 'Open Sans', 'Open Sans', 'Open Sans', 'Open Sans']);
+				}
+				this.fontFamilyDisplay4 = JSON.parse(localStorage.fontFamilyDisplay4);
+
+				if(!localStorage.fontWeightDisplay4) {
+					localStorage.fontWeightDisplay4 = JSON.stringify(['400', '400', '400', '400', '400']);
+				}
+				this.fontWeightDisplay4 = JSON.parse(localStorage.fontWeightDisplay4);
+
+				if(!localStorage.fontColorDisplay4) {
+					localStorage.fontColorDisplay4 = JSON.stringify(['#212529', '#212529', '#212529', '#212529', '#212529']);
+				}
+				this.fontColorDisplay4 = JSON.parse(localStorage.fontColorDisplay4);
+
+
+
+
+				if(!localStorage.fontSizeH1) {
+					localStorage.fontSizeH1 = JSON.stringify(['16', '16', '16', '16', '16']);
+				}
+				this.fontSizeH1 = JSON.parse(localStorage.fontSizeH1);
+
+				if(!localStorage.lineHeightH1) {
+					localStorage.lineHeightH1 = JSON.stringify(['24', '24', '24', '24', '24']);
+				}
+				this.lineHeightH1 = JSON.parse(localStorage.lineHeightH1);
+
+				if(!localStorage.fontFamilyH1) {
+					localStorage.fontFamilyH1 = JSON.stringify(['Open Sans', 'Open Sans', 'Open Sans', 'Open Sans', 'Open Sans']);
+				}
+				this.fontFamilyH1 = JSON.parse(localStorage.fontFamilyH1);
+
+				if(!localStorage.fontWeightH1) {
+					localStorage.fontWeightH1 = JSON.stringify(['400', '400', '400', '400', '400']);
+				}
+				this.fontWeightH1 = JSON.parse(localStorage.fontWeightH1);
+
+				if(!localStorage.fontColorH1) {
+					localStorage.fontColorH1 = JSON.stringify(['#212529', '#212529', '#212529', '#212529', '#212529']);
+				}
+				this.fontColorH1 = JSON.parse(localStorage.fontColorH1);
+
+
+
+
+				if(!localStorage.fontSizeH2) {
+					localStorage.fontSizeH2 = JSON.stringify(['16', '16', '16', '16', '16']);
+				}
+				this.fontSizeH2 = JSON.parse(localStorage.fontSizeH2);
+
+				if(!localStorage.lineHeightH2) {
+					localStorage.lineHeightH2 = JSON.stringify(['24', '24', '24', '24', '24']);
+				}
+				this.lineHeightH2 = JSON.parse(localStorage.lineHeightH2);
+
+				if(!localStorage.fontFamilyH2) {
+					localStorage.fontFamilyH2 = JSON.stringify(['Open Sans', 'Open Sans', 'Open Sans', 'Open Sans', 'Open Sans']);
+				}
+				this.fontFamilyH2 = JSON.parse(localStorage.fontFamilyH2);
+
+				if(!localStorage.fontWeightH2) {
+					localStorage.fontWeightH2 = JSON.stringify(['400', '400', '400', '400', '400']);
+				}
+				this.fontWeightH2 = JSON.parse(localStorage.fontWeightH2);
+
+				if(!localStorage.fontColorH2) {
+					localStorage.fontColorH2 = JSON.stringify(['#212529', '#212529', '#212529', '#212529', '#212529']);
+				}
+				this.fontColorH2 = JSON.parse(localStorage.fontColorH2);
+
+
+
+
+
+				if(!localStorage.fontSizeH3) {
+					localStorage.fontSizeH3 = JSON.stringify(['16', '16', '16', '16', '16']);
+				}
+				this.fontSizeH3 = JSON.parse(localStorage.fontSizeH3);
+
+				if(!localStorage.lineHeightH3) {
+					localStorage.lineHeightH3 = JSON.stringify(['24', '24', '24', '24', '24']);
+				}
+				this.lineHeightH3 = JSON.parse(localStorage.lineHeightH3);
+
+				if(!localStorage.fontFamilyH3) {
+					localStorage.fontFamilyH3 = JSON.stringify(['Open Sans', 'Open Sans', 'Open Sans', 'Open Sans', 'Open Sans']);
+				}
+				this.fontFamilyH3 = JSON.parse(localStorage.fontFamilyH3);
+
+				if(!localStorage.fontWeightH3) {
+					localStorage.fontWeightH3 = JSON.stringify(['400', '400', '400', '400', '400']);
+				}
+				this.fontWeightH3 = JSON.parse(localStorage.fontWeightH3);
+
+				if(!localStorage.fontColorH3) {
+					localStorage.fontColorH3 = JSON.stringify(['#212529', '#212529', '#212529', '#212529', '#212529']);
+				}
+				this.fontColorH3 = JSON.parse(localStorage.fontColorH3);
+
+
+
+
+				if(!localStorage.fontSizeH4) {
+					localStorage.fontSizeH4 = JSON.stringify(['16', '16', '16', '16', '16']);
+				}
+				this.fontSizeH4 = JSON.parse(localStorage.fontSizeH4);
+
+				if(!localStorage.lineHeightH4) {
+					localStorage.lineHeightH4 = JSON.stringify(['24', '24', '24', '24', '24']);
+				}
+				this.lineHeightH4 = JSON.parse(localStorage.lineHeightH4);
+
+				if(!localStorage.fontFamilyH4) {
+					localStorage.fontFamilyH4 = JSON.stringify(['Open Sans', 'Open Sans', 'Open Sans', 'Open Sans', 'Open Sans']);
+				}
+				this.fontFamilyH4 = JSON.parse(localStorage.fontFamilyH4);
+
+				if(!localStorage.fontWeightH4) {
+					localStorage.fontWeightH4 = JSON.stringify(['400', '400', '400', '400', '400']);
+				}
+				this.fontWeightH4 = JSON.parse(localStorage.fontWeightH4);
+
+				if(!localStorage.fontColorH4) {
+					localStorage.fontColorH4 = JSON.stringify(['#212529', '#212529', '#212529', '#212529', '#212529']);
+				}
+				this.fontColorH4 = JSON.parse(localStorage.fontColorH4);
+
+
+
+				if(!localStorage.fontSizeH5) {
+					localStorage.fontSizeH5 = JSON.stringify(['16', '16', '16', '16', '16']);
+				}
+				this.fontSizeH5 = JSON.parse(localStorage.fontSizeH5);
+
+				if(!localStorage.lineHeightH5) {
+					localStorage.lineHeightH5 = JSON.stringify(['24', '24', '24', '24', '24']);
+				}
+				this.lineHeightH5 = JSON.parse(localStorage.lineHeightH5);
+
+				if(!localStorage.fontFamilyH5) {
+					localStorage.fontFamilyH5 = JSON.stringify(['Open Sans', 'Open Sans', 'Open Sans', 'Open Sans', 'Open Sans']);
+				}
+				this.fontFamilyH5 = JSON.parse(localStorage.fontFamilyH5);
+
+				if(!localStorage.fontWeightH5) {
+					localStorage.fontWeightH5 = JSON.stringify(['400', '400', '400', '400', '400']);
+				}
+				this.fontWeightH5 = JSON.parse(localStorage.fontWeightH5);
+
+				if(!localStorage.fontColorH5) {
+					localStorage.fontColorH5 = JSON.stringify(['#212529', '#212529', '#212529', '#212529', '#212529']);
+				}
+				this.fontColorH5 = JSON.parse(localStorage.fontColorH5);
+
+
+
+
+				if(!localStorage.fontSizeH6) {
+					localStorage.fontSizeH6 = JSON.stringify(['16', '16', '16', '16', '16']);
+				}
+				this.fontSizeH6 = JSON.parse(localStorage.fontSizeH6);
+
+				if(!localStorage.lineHeightH6) {
+					localStorage.lineHeightH6 = JSON.stringify(['24', '24', '24', '24', '24']);
+				}
+				this.lineHeightH6 = JSON.parse(localStorage.lineHeightH6);
+
+				if(!localStorage.fontFamilyH6) {
+					localStorage.fontFamilyH6 = JSON.stringify(['Open Sans', 'Open Sans', 'Open Sans', 'Open Sans', 'Open Sans']);
+				}
+				this.fontFamilyH6 = JSON.parse(localStorage.fontFamilyH6);
+
+				if(!localStorage.fontWeightH6) {
+					localStorage.fontWeightH6 = JSON.stringify(['400', '400', '400', '400', '400']);
+				}
+				this.fontWeightH6 = JSON.parse(localStorage.fontWeightH6);
+
+				if(!localStorage.fontColorH6) {
+					localStorage.fontColorH6 = JSON.stringify(['#212529', '#212529', '#212529', '#212529', '#212529']);
+				}
+				this.fontColorH6 = JSON.parse(localStorage.fontColorH6);
+			},
+			watch: {
+				htmlClass(newValue) {
+					localStorage.htmlClass = JSON.stringify(newValue);
+				},
+
+
+
+				fontSizeDisplay1(newValue) {
+					localStorage.fontSizeDisplay1 = JSON.stringify(newValue);
+				},
+				lineHeightDisplay1(newValue) {
+					localStorage.lineHeightDisplay1 = JSON.stringify(newValue);
+				},
+				fontFamilyDisplay1(newValue) {
+					localStorage.fontFamilyDisplay1 = JSON.stringify(newValue);
+				},
+				fontWeightDisplay1(newValue) {
+					localStorage.fontWeightDisplay1 = JSON.stringify(newValue);
+				},
+				fontColorDisplay1(newValue) {
+					localStorage.fontColorDisplay1 = JSON.stringify(newValue);
+				},
+				
+
+				fontSizeDisplay2(newValue) {
+					localStorage.fontSizeDisplay2 = JSON.stringify(newValue);
+				},
+				lineHeightDisplay2(newValue) {
+					localStorage.lineHeightDisplay2 = JSON.stringify(newValue);
+				},
+				fontFamilyDisplay2(newValue) {
+					localStorage.fontFamilyDisplay2 = JSON.stringify(newValue);
+				},
+				fontWeightDisplay2(newValue) {
+					localStorage.fontWeightDisplay2 = JSON.stringify(newValue);
+				},
+				fontColorDisplay2(newValue) {
+					localStorage.fontColorDisplay2 = JSON.stringify(newValue);
+				},
+
+
+				fontSizeDisplay3(newValue) {
+					localStorage.fontSizeDisplay3 = JSON.stringify(newValue);
+				},
+				lineHeightDisplay3(newValue) {
+					localStorage.lineHeightDisplay3 = JSON.stringify(newValue);
+				},
+				fontFamilyDisplay3(newValue) {
+					localStorage.fontFamilyDisplay3 = JSON.stringify(newValue);
+				},
+				fontWeightDisplay3(newValue) {
+					localStorage.fontWeightDisplay3 = JSON.stringify(newValue);
+				},
+				fontColorDisplay3(newValue) {
+					localStorage.fontColorDisplay3 = JSON.stringify(newValue);
+				},
+
+
+
+
+				fontSizeDisplay4(newValue) {
+					localStorage.fontSizeDisplay4 = JSON.stringify(newValue);
+				},
+				lineHeightDisplay4(newValue) {
+					localStorage.lineHeightDisplay4 = JSON.stringify(newValue);
+				},
+				fontFamilyDisplay4(newValue) {
+					localStorage.fontFamilyDisplay4 = JSON.stringify(newValue);
+				},
+				fontWeightDisplay4(newValue) {
+					localStorage.fontWeightDisplay4 = JSON.stringify(newValue);
+				},
+				fontColorDisplay4(newValue) {
+					localStorage.fontColorDisplay4 = JSON.stringify(newValue);
+				}
+
+
+				,fontSizeH1(newValue) {
+					localStorage.fontSizeH1 = JSON.stringify(newValue);
+				},
+				lineHeightH1(newValue) {
+					localStorage.lineHeightH1 = JSON.stringify(newValue);
+				},
+				fontFamilyH1(newValue) {
+					localStorage.fontFamilyH1 = JSON.stringify(newValue);
+				},
+				fontWeightH1(newValue) {
+					localStorage.fontWeightH1 = JSON.stringify(newValue);
+				},
+				fontColorH1(newValue) {
+					localStorage.fontColorH1 = JSON.stringify(newValue);
+				}
+
+
+
+
+				,fontSizeH2(newValue) {
+					localStorage.fontSizeH2 = JSON.stringify(newValue);
+				},
+				lineHeightH2(newValue) {
+					localStorage.lineHeightH2 = JSON.stringify(newValue);
+				},
+				fontFamilyH2(newValue) {
+					localStorage.fontFamilyH2 = JSON.stringify(newValue);
+				},
+				fontWeightH2(newValue) {
+					localStorage.fontWeightH2 = JSON.stringify(newValue);
+				},
+				fontColorH2(newValue) {
+					localStorage.fontColorH2 = JSON.stringify(newValue);
+				}
+
+
+
+
+
+				,fontSizeH3(newValue) {
+					localStorage.fontSizeH3 = JSON.stringify(newValue);
+				},
+				lineHeightH3(newValue) {
+					localStorage.lineHeightH3 = JSON.stringify(newValue);
+				},
+				fontFamilyH3(newValue) {
+					localStorage.fontFamilyH3 = JSON.stringify(newValue);
+				},
+				fontWeightH3(newValue) {
+					localStorage.fontWeightH3 = JSON.stringify(newValue);
+				},
+				fontColorH3(newValue) {
+					localStorage.fontColorH3 = JSON.stringify(newValue);
+				}
+
+
+
+
+				,fontSizeH4(newValue) {
+					localStorage.fontSizeH4 = JSON.stringify(newValue);
+				},
+				lineHeightH4(newValue) {
+					localStorage.lineHeightH4 = JSON.stringify(newValue);
+				},
+				fontFamilyH4(newValue) {
+					localStorage.fontFamilyH4 = JSON.stringify(newValue);
+				},
+				fontWeightH4(newValue) {
+					localStorage.fontWeightH4 = JSON.stringify(newValue);
+				},
+				fontColorH4(newValue) {
+					localStorage.fontColorH4 = JSON.stringify(newValue);
+				}
+
+
+
+
+				,fontSizeH5(newValue) {
+					localStorage.fontSizeH5 = JSON.stringify(newValue);
+				},
+				lineHeightH5(newValue) {
+					localStorage.lineHeightH5 = JSON.stringify(newValue);
+				},
+				fontFamilyH5(newValue) {
+					localStorage.fontFamilyH5 = JSON.stringify(newValue);
+				},
+				fontWeightH5(newValue) {
+					localStorage.fontWeightH5 = JSON.stringify(newValue);
+				},
+				fontColorH5(newValue) {
+					localStorage.fontColorH5 = JSON.stringify(newValue);
+				}
+
+
+
+				,fontSizeH6(newValue) {
+					localStorage.fontSizeH6 = JSON.stringify(newValue);
+				},
+				lineHeightH6(newValue) {
+					localStorage.lineHeightH6 = JSON.stringify(newValue);
+				},
+				fontFamilyH6(newValue) {
+					localStorage.fontFamilyH6 = JSON.stringify(newValue);
+				},
+				fontWeightH6(newValue) {
+					localStorage.fontWeightH6 = JSON.stringify(newValue);
+				},
+				fontColorH6(newValue) {
+					localStorage.fontColorH6 = JSON.stringify(newValue);
+				}
+			}
+		})
+	</script>
+</body>
+</html>
