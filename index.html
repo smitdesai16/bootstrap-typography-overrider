@@ -558,11 +558,8 @@
 						<option v-for="htmlMyClass in htmlClasses">{{htmlMyClass}}</option>
 					</select>
 				</div>
-				<div class="col-12 mb-3 col-md-4">
-					<input type="text" class="form-control" placeholder="Google Font Name">
-				</div>
-				<div class="col-12 col-md-4">
-					<button class="btn btn-primary btn-block">Add Font</button>
+				<div class="col-12 mb-3 col-md-8">
+					<input type="text" class="form-control" placeholder="Google Font Name" v-model="fontFamilies">
 				</div>
 			</div>
 			<br/>
@@ -588,8 +585,7 @@
 								<td><input class="form-control" v-model="lineHeightDisplay1[index]"></td>
 								<td>
 									<select v-model="fontFamilyDisplay1[index]" class="form-control">
-										<option>Open Sans</option>
-										<option>Barlow</option>
+										<option v-for="fontFamily in fontFamilies">{{fontFamily}}</option>
 									</select>
 								</td>
 								<td>
@@ -608,8 +604,7 @@
 								<td><input class="form-control" v-model="lineHeightDisplay2[index]"></td>
 								<td>
 									<select v-model="fontFamilyDisplay2[index]" class="form-control">
-										<option>Open Sans</option>
-										<option>Barlow</option>
+										<option v-for="fontFamily in fontFamilies">{{fontFamily}}</option>
 									</select>
 								</td>
 								<td>
@@ -628,8 +623,7 @@
 								<td><input class="form-control" v-model="lineHeightDisplay3[index]"></td>
 								<td>
 									<select v-model="fontFamilyDisplay3[index]" class="form-control">
-										<option>Open Sans</option>
-										<option>Barlow</option>
+										<option v-for="fontFamily in fontFamilies">{{fontFamily}}</option>
 									</select>
 								</td>
 								<td>
@@ -648,8 +642,7 @@
 								<td><input class="form-control" v-model="lineHeightDisplay4[index]"></td>
 								<td>
 									<select v-model="fontFamilyDisplay4[index]" class="form-control">
-										<option>Open Sans</option>
-										<option>Barlow</option>
+										<option v-for="fontFamily in fontFamilies">{{fontFamily}}</option>
 									</select>
 								</td>
 								<td>
@@ -668,8 +661,7 @@
 								<td><input class="form-control" v-model="lineHeightH1[index]"></td>
 								<td>
 									<select v-model="fontFamilyH1[index]" class="form-control">
-										<option>Open Sans</option>
-										<option>Barlow</option>
+										<option v-for="fontFamily in fontFamilies">{{fontFamily}}</option>
 									</select>
 								</td>
 								<td>
@@ -688,8 +680,7 @@
 								<td><input class="form-control" v-model="lineHeightH2[index]"></td>
 								<td>
 									<select v-model="fontFamilyH2[index]" class="form-control">
-										<option>Open Sans</option>
-										<option>Barlow</option>
+										<option v-for="fontFamily in fontFamilies">{{fontFamily}}</option>
 									</select>
 								</td>
 								<td>
@@ -708,8 +699,7 @@
 								<td><input class="form-control" v-model="lineHeightH3[index]"></td>
 								<td>
 									<select v-model="fontFamilyH3[index]" class="form-control">
-										<option>Open Sans</option>
-										<option>Barlow</option>
+										<option v-for="fontFamily in fontFamilies">{{fontFamily}}</option>
 									</select>
 								</td>
 								<td>
@@ -728,8 +718,7 @@
 								<td><input class="form-control" v-model="lineHeightH4[index]"></td>
 								<td>
 									<select v-model="fontFamilyH4[index]" class="form-control">
-										<option>Open Sans</option>
-										<option>Barlow</option>
+										<option v-for="fontFamily in fontFamilies">{{fontFamily}}</option>
 									</select>
 								</td>
 								<td>
@@ -748,8 +737,7 @@
 								<td><input class="form-control" v-model="lineHeightH5[index]"></td>
 								<td>
 									<select v-model="fontFamilyH5[index]" class="form-control">
-										<option>Open Sans</option>
-										<option>Barlow</option>
+										<option v-for="fontFamily in fontFamilies">{{fontFamily}}</option>
 									</select>
 								</td>
 								<td>
@@ -768,8 +756,7 @@
 								<td><input class="form-control" v-model="lineHeightH6[index]"></td>
 								<td>
 									<select v-model="fontFamilyH6[index]" class="form-control">
-										<option>Open Sans</option>
-										<option>Barlow</option>
+										<option v-for="fontFamily in fontFamilies">{{fontFamily}}</option>
 									</select>
 								</td>
 								<td>
@@ -870,7 +857,8 @@
 				htmlClass: 'display-1',
 				htmlClasses: ['display-1','display-2','display-3','display-4','h1','h2','h3','h4','h5','h6'],
 				resolutions: ['0-576', '576-768', '768-992', '992-1200', '1200-infinity'],
-				fontWeights: [100, 200, 300, 400, 500, 600, 700, 800, 900]
+				fontWeights: [100, 200, 300, 400, 500, 600, 700, 800, 900],
+				fontFamilies: ['Open Sans', 'Barlow']
 			},
 			mounted() {
 				var htmlMyClasses = ['display-1','display-2','display-3','display-4','h1','h2','h3','h4','h5','h6'];
@@ -879,6 +867,13 @@
 					localStorage.htmlClass = JSON.stringify('display-1');
 				}
 				this.htmlClass = JSON.parse(localStorage.htmlClass);
+
+
+
+				if(!localStorage.fontFamilies) {
+					localStorage.fontFamilies = JSON.stringify(['Open Sans', 'Barlow']);
+				}
+				this.fontFamilies = JSON.parse(localStorage.fontFamilies);
 
 
 
@@ -1163,6 +1158,14 @@
 			watch: {
 				htmlClass(newValue) {
 					localStorage.htmlClass = JSON.stringify(newValue);
+				},
+
+				fontFamilies(newValue) {
+					if(typeof(newValue) !== "object") {
+						newValue = newValue.split(",");
+						this.fontFamilies = newValue;
+					}
+					localStorage.fontFamilies = JSON.stringify(newValue);
 				},
 
 
