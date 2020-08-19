@@ -784,7 +784,9 @@
 				</div>
 			</div>
 			<div class="row">
-				
+				<div class="col-12">
+					<button class="btn btn-danger" @click="reset">Reset All</button>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -1344,6 +1346,12 @@
 				},
 				fontColorH6(newValue) {
 					localStorage.fontColorH6 = JSON.stringify(newValue);
+				}
+			},
+			methods: {
+				reset: function() {
+					localStorage.clear();
+					location.reload();
 				}
 			}
 		})
