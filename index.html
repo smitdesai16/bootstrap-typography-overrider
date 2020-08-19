@@ -6,14 +6,14 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 	<style type="text/css">
 		.highlight-0-576 {
-			background: orange;
+			background: #ffc107;
 		}
 		@media only screen and (min-width: 576px) {
 			.highlight-0-576 {
 				background: white;
 			}
 			.highlight-576-768 {
-				background: orange;
+				background: #ffc107;
 			}
 		}
 		@media only screen and (min-width: 768px) {
@@ -21,7 +21,7 @@
 				background: white;
 			}
 			.highlight-768-992 {
-				background: orange;
+				background: #ffc107;
 			}
 		}
 		@media only screen and (min-width: 992px) {
@@ -29,7 +29,7 @@
 				background: white;
 			}
 			.highlight-992-1200 {
-				background: orange;
+				background: #ffc107;
 			}
 		}
 		@media only screen and (min-width: 1200px) {
@@ -37,7 +37,7 @@
 				background: white;
 			}
 			.highlight-1200-infinity {
-				background: orange;
+				background: #ffc107;
 			}
 		}
 	</style>
@@ -45,7 +45,7 @@
 <body>
 	<div id="app">
 		<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
-		<div class="container">
+		<div class="container mt-3">
 			<div class="row">
 				<v-style>
 					.display-1 {
@@ -553,15 +553,15 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-12 mb-3">
+				<div class="col-12 mb-3 col-md-4">
 					<select v-model="htmlClass" class="form-control">
 						<option v-for="htmlMyClass in htmlClasses">{{htmlMyClass}}</option>
 					</select>
 				</div>
-				<div class="col-12 mb-3">
+				<div class="col-12 mb-3 col-md-4">
 					<input type="text" class="form-control" placeholder="Google Font Name">
 				</div>
-				<div class="col-12">
+				<div class="col-12 col-md-4">
 					<button class="btn btn-primary btn-block">Add Font</button>
 				</div>
 			</div>
