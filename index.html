@@ -858,7 +858,7 @@
 				htmlClasses: ['display-1','display-2','display-3','display-4','h1','h2','h3','h4','h5','h6'],
 				resolutions: ['0-576', '576-768', '768-992', '992-1200', '1200-infinity'],
 				fontWeights: [100, 200, 300, 400, 500, 600, 700, 800, 900],
-				fontFamilies: ['Open Sans', 'Barlow']
+				fontFamilies: []
 			},
 			mounted() {
 				var htmlMyClasses = ['display-1','display-2','display-3','display-4','h1','h2','h3','h4','h5','h6'];
@@ -871,7 +871,7 @@
 
 
 				if(!localStorage.fontFamilies) {
-					localStorage.fontFamilies = JSON.stringify(['Open Sans', 'Barlow']);
+					localStorage.fontFamilies = JSON.stringify(['Open Sans', 'Pacifico']);
 				}
 				this.fontFamilies = JSON.parse(localStorage.fontFamilies);
 
