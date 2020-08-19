@@ -541,12 +541,14 @@
 						}
 					}
 				</v-style>
+			</div>
+			<div class="row">
 				<div class="col-12">
 					<p :class="htmlClass">
 						{{message}}
 					</p>
 					<p :class="htmlClass">
-						{{message}}
+						{{message | uppercase}}
 					</p>
 				</div>
 			</div>
@@ -795,10 +797,14 @@
 			}
 		});
 
+		Vue.filter('uppercase', function (value) {
+			return value.toUpperCase()
+		})
+
 		var app = new Vue({
 			el: '#app',
 			data: {
-				message: 'Almost before we knew it, we had left the ground.',
+				message: 'the quick brown fox jumps over the lazy dog',
 				fontSizeDisplay1: {},
 				lineHeightDisplay1: {},
 				fontFamilyDisplay1: {},
