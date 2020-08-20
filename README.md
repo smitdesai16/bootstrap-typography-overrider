@@ -14,7 +14,7 @@ For this example I am planning to use my 2 faviourate fonts.
 
 Enter this names in place of fonts (use comma seperator and please check you are not adding any unnecessary spaces).
 
-1.png
+![](https://raw.githubusercontent.com/smitdesai16/bootstrap-typography-overrider/master/images/1.PNG)
 
 ## 3. Select class/tag you want to work on
 By default display-1 is selected but you can select any type provided from following list.
@@ -29,18 +29,18 @@ By default display-1 is selected but you can select any type provided from follo
 1. h5
 1. h6
 
-2.png
+![](https://raw.githubusercontent.com/smitdesai16/bootstrap-typography-overrider/master/images/2.PNG)
 
 ## 3. Start defining properties
 I am big fan of mobile first development. I would recommend to start with mobile screen. but in this case all breakpoint values will get override anyway.. you can start from whichever breakpoint you want.
 
 The tool will highlight current breakpoint based on your screen size.
 
-3.png
+![](https://raw.githubusercontent.com/smitdesai16/bootstrap-typography-overrider/master/images/3.PNG)
 
 Once you start changing value you can see result on the runtime on top.
 
-4.png
+![](https://raw.githubusercontent.com/smitdesai16/bootstrap-typography-overrider/master/images/4.PNG)
 
 ## 4. Update, Review & Repeat
 
@@ -55,7 +55,7 @@ The styles will get generated into following DOM path.
 
 **body #app .row style**
 
-5.png
+![](https://raw.githubusercontent.com/smitdesai16/bootstrap-typography-overrider/master/images/5.PNG)
 
 ### 5.3 Saving style in project.
 Just make sure you add this styles after adding bootstrap css.
