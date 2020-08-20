@@ -63,5 +63,7 @@ Just make sure you add this styles after adding bootstrap css.
 
 > As of now, I dont have better way to get this css to you; but I welcome all suggestions. :smile:
 
+## To start from scratch again just press Reset All
+
 [Josefin Sans]: https://fonts.google.com/specimen/Josefin+Sans "Josefin Sans"
 [Quicksand]: https://fonts.google.com/specimen/Quicksand "Quicksand"
