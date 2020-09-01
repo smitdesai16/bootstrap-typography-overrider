@@ -540,6 +540,54 @@
 							color: {{fontColorH6[4]}};
 						}
 					}
+
+					p {
+						font-size: {{fontSizeP[0] + 'px'}};
+						line-height: {{lineHeightP[0] + 'px'}};
+						font-family: {{fontFamilyP[0]}};
+						font-weight: {{fontWeightP[0]}};
+						color: {{fontColorP[0]}};
+					}
+
+					@media only screen and (min-width: 576px) {
+						p {
+							font-size: {{fontSizeP[1] + 'px'}};
+							line-height: {{lineHeightP[1] + 'px'}};
+							font-family: {{fontFamilyP[1]}};
+							font-weight: {{fontWeightP[1]}};
+							color: {{fontColorP[1]}};
+						}
+					}
+
+					@media only screen and (min-width: 768px) {
+						p {
+							font-size: {{fontSizeP[2] + 'px'}};
+							line-height: {{lineHeightP[2] + 'px'}};
+							font-family: {{fontFamilyP[2]}};
+							font-weight: {{fontWeightP[2]}};
+							color: {{fontColorP[2]}};
+						}
+					}
+
+					@media only screen and (min-width: 992px) {
+						p {
+							font-size: {{fontSizeP[3] + 'px'}};
+							line-height: {{lineHeightP[3] + 'px'}};
+							font-family: {{fontFamilyP[3]}};
+							font-weight: {{fontWeightP[3]}};
+							color: {{fontColorP[3]}};
+						}
+					}
+
+					@media only screen and (min-width: 1200px) {
+						p {
+							font-size: {{fontSizeP[4] + 'px'}};
+							line-height: {{lineHeightP[4] + 'px'}};
+							font-family: {{fontFamilyP[4]}};
+							font-weight: {{fontWeightP[4]}};
+							color: {{fontColorP[4]}};
+						}
+					}
 				</v-style>
 			</div>
 			<div class="row">
@@ -766,6 +814,25 @@
 								</td>
 								<td><input class="form-control" v-model="fontColorH6[index]"></td>
 							</tr>
+
+							<tr v-if="htmlClass === 'p'" v-for="(resolution, index) in resolutions" :key="resolution">
+								<td :class="'highlight-' + resolution">
+									{{resolution}}
+								</td>
+								<td><input class="form-control" v-model="fontSizeP[index]"></td>
+								<td><input class="form-control" v-model="lineHeightP[index]"></td>
+								<td>
+									<select v-model="fontFamilyP[index]" class="form-control">
+										<option v-for="fontFamily in fontFamilies">{{fontFamily}}</option>
+									</select>
+								</td>
+								<td>
+									<select v-model="fontWeightP[index]" class="form-control">
+										<option v-for="fontWeight in fontWeights">{{fontWeight}}</option>
+									</select>
+								</td>
+								<td><input class="form-control" v-model="fontColorP[index]"></td>
+							</tr>
 						</tbody>
 					</table>
 				</div>
@@ -854,14 +921,20 @@
 				fontWeightH6: {},
 				fontColorH6: {},
 
+				fontSizeP: {},
+				lineHeightP: {},
+				fontFamilyP: {},
+				fontWeightP: {},
+				fontColorP: {},
+
 				htmlClass: 'display-1',
-				htmlClasses: ['display-1','display-2','display-3','display-4','h1','h2','h3','h4','h5','h6'],
+				htmlClasses: ['display-1','display-2','display-3','display-4','h1','h2','h3','h4','h5','h6', 'p'],
 				resolutions: ['0-576', '576-768', '768-992', '992-1200', '1200-infinity'],
 				fontWeights: [100, 200, 300, 400, 500, 600, 700, 800, 900],
 				fontFamilies: []
 			},
 			mounted() {
-				var htmlMyClasses = ['display-1','display-2','display-3','display-4','h1','h2','h3','h4','h5','h6'];
+				var htmlMyClasses = ['display-1','display-2','display-3','display-4','h1','h2','h3','h4','h5','h6','p'];
 
 				if(!localStorage.htmlClass) {
 					localStorage.htmlClass = JSON.stringify('display-1');
@@ -1154,6 +1227,37 @@
 					localStorage.fontColorH6 = JSON.stringify(['#212529', '#212529', '#212529', '#212529', '#212529']);
 				}
 				this.fontColorH6 = JSON.parse(localStorage.fontColorH6);
+
+
+
+
+
+
+
+				if(!localStorage.fontSizeP) {
+					localStorage.fontSizeP = JSON.stringify(['16', '16', '16', '16', '16']);
+				}
+				this.fontSizeP = JSON.parse(localStorage.fontSizeP);
+
+				if(!localStorage.lineHeightP) {
+					localStorage.lineHeightP = JSON.stringify(['24', '24', '24', '24', '24']);
+				}
+				this.lineHeightP = JSON.parse(localStorage.lineHeightP);
+
+				if(!localStorage.fontFamilyP) {
+					localStorage.fontFamilyP = JSON.stringify(['Open Sans', 'Open Sans', 'Open Sans', 'Open Sans', 'Open Sans']);
+				}
+				this.fontFamilyP = JSON.parse(localStorage.fontFamilyP);
+
+				if(!localStorage.fontWeightP) {
+					localStorage.fontWeightP = JSON.stringify(['400', '400', '400', '400', '400']);
+				}
+				this.fontWeightP = JSON.parse(localStorage.fontWeightP);
+
+				if(!localStorage.fontColorP) {
+					localStorage.fontColorP = JSON.stringify(['#212529', '#212529', '#212529', '#212529', '#212529']);
+				}
+				this.fontColorP = JSON.parse(localStorage.fontColorP);
 			},
 			watch: {
 				htmlClass(newValue) {
@@ -1349,6 +1453,24 @@
 				},
 				fontColorH6(newValue) {
 					localStorage.fontColorH6 = JSON.stringify(newValue);
+				}
+
+
+
+				,fontSizeP(newValue) {
+					localStorage.fontSizeP = JSON.stringify(newValue);
+				},
+				lineHeightP(newValue) {
+					localStorage.lineHeightP = JSON.stringify(newValue);
+				},
+				fontFamilyP(newValue) {
+					localStorage.fontFamilyP = JSON.stringify(newValue);
+				},
+				fontWeightP(newValue) {
+					localStorage.fontWeightP = JSON.stringify(newValue);
+				},
+				fontColorP(newValue) {
+					localStorage.fontColorP = JSON.stringify(newValue);
 				}
 			},
 			methods: {
