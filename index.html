@@ -597,7 +597,7 @@
 							</tr>
 
 							<tr v-if="htmlClass === 'display-2'" v-for="(resolution, index) in resolutions" :key="resolution">
-								<td>
+								<td :class="'highlight-' + resolution">
 									{{resolution}}
 								</td>
 								<td><input class="form-control" v-model="fontSizeDisplay2[index]"></td>
@@ -616,7 +616,7 @@
 							</tr>
 
 							<tr v-if="htmlClass === 'display-3'" v-for="(resolution, index) in resolutions" :key="resolution">
-								<td>
+								<td :class="'highlight-' + resolution">
 									{{resolution}}
 								</td>
 								<td><input class="form-control" v-model="fontSizeDisplay3[index]"></td>
@@ -635,7 +635,7 @@
 							</tr>
 
 							<tr v-if="htmlClass === 'display-4'" v-for="(resolution, index) in resolutions" :key="resolution">
-								<td>
+								<td :class="'highlight-' + resolution">
 									{{resolution}}
 								</td>
 								<td><input class="form-control" v-model="fontSizeDisplay4[index]"></td>
@@ -654,7 +654,7 @@
 							</tr>
 
 							<tr v-if="htmlClass === 'h1'" v-for="(resolution, index) in resolutions" :key="resolution">
-								<td>
+								<td :class="'highlight-' + resolution">
 									{{resolution}}
 								</td>
 								<td><input class="form-control" v-model="fontSizeH1[index]"></td>
@@ -673,7 +673,7 @@
 							</tr>
 
 							<tr v-if="htmlClass === 'h2'" v-for="(resolution, index) in resolutions" :key="resolution">
-								<td>
+								<td :class="'highlight-' + resolution">
 									{{resolution}}
 								</td>
 								<td><input class="form-control" v-model="fontSizeH2[index]"></td>
@@ -692,7 +692,7 @@
 							</tr>
 
 							<tr v-if="htmlClass === 'h3'" v-for="(resolution, index) in resolutions" :key="resolution">
-								<td>
+								<td :class="'highlight-' + resolution">
 									{{resolution}}
 								</td>
 								<td><input class="form-control" v-model="fontSizeH3[index]"></td>
@@ -711,7 +711,7 @@
 							</tr>
 
 							<tr v-if="htmlClass === 'h4'" v-for="(resolution, index) in resolutions" :key="resolution">
-								<td>
+								<td :class="'highlight-' + resolution">
 									{{resolution}}
 								</td>
 								<td><input class="form-control" v-model="fontSizeH4[index]"></td>
@@ -730,7 +730,7 @@
 							</tr>
 
 							<tr v-if="htmlClass === 'h5'" v-for="(resolution, index) in resolutions" :key="resolution">
-								<td>
+								<td :class="'highlight-' + resolution">
 									{{resolution}}
 								</td>
 								<td><input class="form-control" v-model="fontSizeH5[index]"></td>
@@ -749,7 +749,7 @@
 							</tr>
 
 							<tr v-if="htmlClass === 'h6'" v-for="(resolution, index) in resolutions" :key="resolution">
-								<td>
+								<td :class="'highlight-' + resolution">
 									{{resolution}}
 								</td>
 								<td><input class="form-control" v-model="fontSizeH6[index]"></td>
